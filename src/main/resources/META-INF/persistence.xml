@@ -1,0 +1,19 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+ version="2.0">
+ <persistence-unit name="bbdd">
+ <!-- <class>es.curso.bo.Persona</class> -->
+ <properties>
+ <property name="hibernate.show_sql" value="true" />
+ <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+ <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+ <property name="javax.persistence.jdbc.user" value="root" />
+ <property name="javax.persistence.jdbc.password" value="Root_1234" />
+ <!-- TODO Cambiar IP:PUERTO/nombre_bbdd -->
+ <property name="javax.persistence.jdbc.url" value="jdbc:mysql://IP:PUERTO/nombre_bbdd" />
+</properties>
+ 
+</persistence-unit>
+</persistence>
